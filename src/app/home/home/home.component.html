@@ -1,0 +1,29 @@
+
+    <div class="col-md-12">
+      <h1>All Task List</h1>
+      <table class="table table-hover table-inverse">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>task Name</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr  *ngFor="let item of resposeData.taskData; let msgIndex = index">
+              <th scope="row">{{ item.id}}</th>
+              <td>{{ item.taskname}}</td>
+              <td>{{ item.description}}</td>
+              <td>{{ item.status}}</td>
+              <td>
+                  <a href="/edittask/{{item.id}}" type="button" class="btn btn-success">Edit</a>
+                  <button (click)="deletTask(item.id)" type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+    </div>

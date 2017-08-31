@@ -1,0 +1,26 @@
+
+    <div class="col-md-12">
+        <form>
+            <div class="form-group">
+              <label for="taskname">Task Name</label>
+              <input type="email" class="form-control" name="taskname" [(ngModel)]="taskData.taskname"  placeholder="Task Name">
+            </div>
+            <div class="form-group">
+                <label for="taskdesc">Task Description</label>
+                <textarea  class="form-control" name="taskdesc" [(ngModel)]="taskData.taskdesc" ></textarea>
+              </div>
+
+            <div class="form-group">
+              <label for="taskstatus">task Status</label>
+              <select class="form-control form-control-sm" name="status"  [(ngModel)]="taskData.status" >
+                  <option>select</option>
+                  <option value="new">New</option>
+                  <option value="completed" >Completed</option>
+                  <option value="processing" >processing</option>
+                </select>
+
+            </div>
+
+            <button type="button"  (click)="createtask()" class="btn btn-primary">Create</button>
+          </form>
+    </div>
