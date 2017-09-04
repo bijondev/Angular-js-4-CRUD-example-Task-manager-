@@ -7,5 +7,5 @@ how to install? <br/>
 3. copy "task" folder to local host (change your apiUrl in src/app/data-service.service.ts) <br/>
 4. go to project folder <br/>
 5. run cmd and type -> ng serve <br/>
-6. type "http://localhost:8100" <br/>
+6. type "http://localhost:4200" <br/>
 #demo - http://aj4crud.bmsolutionsbd.com <br/>
